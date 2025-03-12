@@ -1,10 +1,16 @@
+
 class Person:
-  def __init__(mysillyobject, name, age):
-    mysillyobject.name = name
-    mysillyobject.age = age
+    def __init__(self, name, age, address):
+        self.name = name
+        self.age = age
+        self.address = address
 
-  def myfunc(abc):
-    print("Hello my name is " + abc.name)
+    def display_info(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+        print("Address:", self.address)
 
-p1 = Person("John", 36)
-p1.myfunc()
+person1 = Person("Alex Johnson", 30, "Maple Street 42")
+
+person1.display_info()
+
